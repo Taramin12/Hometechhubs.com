@@ -1,0 +1,607 @@
+    nav .navbar {
+        background-color: beige;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-top: 5px;
+        line-height: 10px;
+        z-index: 9999;
+        width: 100%;
+        position: fixed;
+        margin-top: 0;
+        padding-left: 0;
+        top: 0;
+        left: 0;
+    }
+    
+    nav .navbar .logo h1 span {
+        color: rgb(248, 10, 61);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    nav .navbar .logo h1 {
+        padding-top: 11px;
+        line-height: 20px;
+        color: blueviolet;
+    }
+    
+    nav .navbar .logo {
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    
+    nav .navbar .logo img {
+        height: 70px;
+        width: 30px;
+        padding: 0;
+        padding-left: 20px;
+    }
+    
+    body {
+        margin-top: 0;
+        min-height: 100%;
+        min-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    nav .navbar ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 18px;
+        padding-right: 50vh;
+    }
+    
+    nav .navbar li {
+        list-style: none;
+    }
+    
+    nav .navbar a {
+        text-decoration: none;
+        padding: 30px;
+        color: rgb(14, 13, 13);
+        font-size: medium;
+    }
+    
+    .navbar #times {
+        margin-top: 15px;
+        display: none;
+        color: rgb(12, 12, 12);
+    }
+    
+    .navbar #times:hover {
+        color: rgb(245, 10, 88);
+    }
+    
+    .navbar #times ul i {
+        font-size: x-large;
+    }
+    
+    .navbar #bar {
+        display: none;
+        color: rgb(10, 10, 10);
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    
+    .navbar #bar:hover {
+        color: rgb(243, 7, 66);
+    }
+    
+    .navbar #bar i {
+        font-size: xx-large;
+    }
+    
+    .navbar {
+        display: flex;
+    }
+    
+    nav .navbar a:hover,
+    nav .navbar a.active {
+        color: rgb(10, 7, 190);
+        font-weight: bolder;
+        transition: 0.7s ease;
+    }
+    
+    nav .navbar a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: rgb(139, 109, 248);
+        transition: 0.3s;
+    }
+    
+    nav .navbar a:hover::after {
+        content: "";
+        margin-left: 30px;
+        width: 40%;
+        height: 2px;
+        background-color: rgb(131, 111, 245);
+        transition: 0.3s;
+        border-bottom: 1px solid rgb(130, 106, 238);
+        margin-top: 3px;
+    }
+    
+    header {
+        margin-left: 0;
+        background-image: url("tara1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        background-position: center;
+        text-align: start;
+        justify-content: center;
+        color: bisque;
+    }
+    
+    header .text {
+        padding-left: 120vh;
+    }
+    
+    header .text h1 {
+        font-size: 50px;
+    }
+    
+    header .text p {
+        line-height: 30px;
+    }
+    
+    #information {
+        padding: 60px;
+    }
+    
+    #information .about .pic img {
+        width: 90%;
+        height: 70vh;
+    }
+    
+    #information .about .text {
+        width: 50%;
+        line-height: 40px;
+        padding-right: 110px;
+        padding-top: 120px;
+        text-align: justify;
+        padding-left: 60px;
+    }
+    
+    #information .about {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+    }
+    
+    #post {
+        padding: 80px;
+        text-align: center;
+        background-color: rgb(243, 248, 248);
+        margin-top: 60px;
+    }
+    
+    #post h1 {
+        font-size: 30px;
+    }
+    
+    #products {
+        padding: 60px;
+    }
+    
+    #products .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 80px;
+    }
+    
+    #products .pic {
+        width: 60%;
+    }
+    
+    #products .product-information {
+        width: 40%;
+        line-height: 30px;
+        text-align: justify;
+        padding-top: 2vh;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    
+    #products .pic img {
+        width: 70%;
+        height: 70vh;
+    }
+    
+    #products .product-information a {
+        text-decoration: none;
+        background-color: blueviolet;
+        color: white;
+        padding: 15px 30px 15px 30px;
+        border: none;
+        transition: 0.8s ease;
+    }
+    
+    #products .product-information a:hover {
+        background-color: rgb(7, 204, 171);
+        color: black;
+    }
+    
+    #info {
+        margin-left: 40vh;
+        width: 50%;
+        padding: 70px;
+        background-color: white;
+        text-align: center;
+        border: 1px solid rgb(199, 196, 196);
+        box-shadow: 0 7px 7px 0 rgb(161, 158, 158);
+    }
+    
+    #info .info-detail {
+        width: 100%;
+        line-height: 40px;
+    }
+    
+    #inpt {
+        padding: 90px;
+        align-items: center;
+        margin: 90px 90px 90px 90px;
+        border: 1px solid rgb(199, 196, 196);
+        box-shadow: 0 7px 7px 0 rgb(161, 158, 158);
+    }
+    
+    #inpt .inpt-info {
+        padding-left: 20vh;
+    }
+    
+    #inpt .inpt-info input {
+        margin: 20px;
+        padding: 12px 200px 12px 10px;
+        border: 1px solid rgb(85, 84, 84);
+        background-color: rgb(252, 247, 247);
+    }
+    
+    #inpt .inpt-info textarea {
+        margin: 20px;
+        padding: 10px 300px 10px 10px;
+        margin-bottom: 30px;
+        border: 1px solid rgb(85, 84, 84);
+        background-color: rgb(252, 246, 246);
+    }
+    
+    #inpt .inpt-info button {
+        margin: 20px;
+        padding: 15px 25px 15px 25px;
+        background-color: red;
+        color: white;
+        border-radius: 6px;
+        border: none;
+    }
+    
+    footer span {
+        color: rgb(243, 9, 68);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("tara11.jpg");
+        width: 100%;
+        height: 100vh;
+        color: rgb(117, 114, 114);
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    footer h1 {
+        text-align: center;
+        padding-top: 40vh;
+        color: rgb(112, 112, 111);
+    }
+    
+    footer a {
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(119, 117, 117);
+        font-weight: 1000;
+        padding-top: 30px;
+    }
+    
+    #privacy {
+        padding: 90px;
+        line-height: 30px;
+        margin-top: 15vh;
+    }
+    
+    #privacy .privacy-policy {
+        text-align: justify;
+    }
+    
+    #product1 {
+        margin: 200px;
+        text-align: center;
+        margin-top: 200px;
+        border: 1px solid rgb(155, 153, 153);
+        border-top: none;
+    }
+    
+    #product1 h1 {
+        background-color: rgb(34, 34, 34);
+        color: white;
+        padding: 30px;
+    }
+    
+    #product1 .product2 h2 {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    
+    #product1 .product2 h3 {
+        background-color: rgb(3, 143, 85);
+        display: inline-block;
+        padding: 15px 40px 15px 40px;
+        color: white;
+    }
+    
+    #product1 .product2 .image {
+        padding: 30px;
+    }
+    
+    #product1 .product2 .image img {
+        width: 40%;
+        height: 50vh;
+    }
+    
+    #product1 .icon li {
+        list-style: none;
+        display: flex;
+        margin-left: 53vh;
+        padding: 10px 0;
+        align-items: center;
+    }
+    
+    #product1 .icon li i {
+        font-size: 15px;
+        padding-right: 5px;
+        color: rgb(4, 145, 121);
+        font-size: larger;
+    }
+    
+    #product1 .icon li p {
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    #product1 .product2 .logo-btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 90px;
+    }
+    
+    #product1 .product2 .logo-btn .logo img {
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+        padding-right: 50vh;
+    }
+    
+    #product1 .product2 .logo-btn .btn a {
+        text-decoration: none;
+        padding: 15px 30px 15px 30px;
+        border: none;
+        background-color: red;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    .para {
+        text-align: justify;
+        padding: 30px;
+    }
+    
+    @media only screen and (min-width:568px) and (max-width:1100px) {
+        .navbar #times {
+            display: initial;
+            font-size: x-large;
+            cursor: pointer;
+        }
+        .navbar #bar {
+            padding-top: 20px;
+            font-size: x-large;
+            cursor: pointer;
+            display: initial;
+            padding-right: 30px;
+        }
+        nav .navbar ul li {
+            padding: 20px 0 20px 40px;
+            margin-left: 0;
+        }
+        nav .navbar ul.active {
+            right: 0;
+        }
+        #products .pic img {
+            width: 90%;
+            height: 40vh;
+            padding-left: 10px;
+            margin-top: 150px;
+        }
+        #products {
+            padding: 20px;
+        }
+        #information .about .pic img {
+            width: 100%;
+            height: 30vh;
+            margin-top: 5vh;
+        }
+        #information .about .text {
+            width: 60%;
+            line-height: 30px;
+            padding-right: 50px;
+            padding-top: 60px;
+            padding-left: 0px;
+        }
+        #products .product-information {
+            padding-top: 15vh;
+        }
+        #products .product {
+            margin-bottom: 0px;
+        }
+        header .text {
+            padding-left: 5vh;
+        }
+        #info {
+            margin-left: 4vh;
+            width: 70%;
+            margin-top: 50px;
+        }
+        #inpt .inpt-info {
+            padding-left: 0vh;
+        }
+        #inpt {
+            margin: 4vh;
+            width: 72%;
+            padding-left: 30px;
+        }
+        #inpt .inpt-info textarea {
+            padding: 10px 300px 10px 10px;
+        }
+        #product1 {
+            margin: 30px;
+            margin-top: 150px;
+        }
+        #product1 .product2 .image img {
+            width: 50%;
+            height: 30vh;
+        }
+        #product1 .icon li {
+            margin-left: 15vh;
+        }
+        #product1 .product2 .logo-btn .logo img {
+            padding-right: 10vh;
+        }
+    }
+    
+    @media only screen and (min-width:375px) and (max-width:580px) {
+        .navbar #times {
+            display: initial;
+            font-size: x-large;
+            cursor: pointer;
+        }
+        .navbar #bar {
+            padding-top: 20px;
+            font-size: x-large;
+            cursor: pointer;
+            display: initial;
+            padding-right: 30px;
+        }
+        nav .navbar ul li {
+            padding: 20px 0 20px 40px;
+            margin-left: 0;
+        }
+        nav .navbar ul.active {
+            right: 0;
+        }
+        header .text {
+            padding-left: 3vh;
+        }
+        #info {
+            margin-left: 0vh;
+            width: 60%;
+        }
+        #inpt {
+            margin-top: 5vh;
+            margin: 3vh;
+            width: 60%;
+            padding-left: 5px;
+        }
+        #inpt .inpt-info h2 {
+            padding-left: 5vh;
+        }
+        #inpt .inpt-info input {
+            padding: 12px 60px 12px 10px;
+            border: 1px solid rgb(85, 84, 84);
+        }
+        #inpt .inpt-info textarea {
+            padding: 0px 40px 0px 0px;
+            border: 1px solid rgb(85, 84, 84);
+        }
+        #inpt .inpt-info {
+            padding-left: 0vh;
+        }
+        #products .product {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        #products {
+            padding: 20px;
+        }
+        #products .pic img {
+            width: 90%;
+            height: 30vh;
+        }
+        #products .pic {
+            width: 90%;
+        }
+        #products .product-information {
+            width: 90%;
+        }
+        #information .about {
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            text-align: start;
+        }
+        #information .about .pic img {
+            width: 100%;
+            height: 40vh;
+        }
+        #information .about .text {
+            width: 100%;
+            line-height: 30px;
+            padding-right: 0px;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+        #privacy {
+            padding: 20px;
+        }
+        #product1 {
+            margin: 5px;
+            margin-top: 150px;
+            margin-bottom: 30px;
+        }
+        #product1 .product2 .image img {
+            width: 50%;
+            height: 30vh;
+        }
+        #product1 .icon li {
+            margin-left: 15vh;
+        }
+        #product1 .icon li p {
+            font-size: 10px;
+        }
+        #product1 .product2 .logo-btn .logo img {
+            padding-right: 10vh;
+            width: 70px;
+            height: 70px;
+        }
+        #product1 .product2 .logo-btn {
+            padding-left: 15px;
+        }
+        #product1 .product2 .logo-btn .btn a {
+            font-size: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+    }
